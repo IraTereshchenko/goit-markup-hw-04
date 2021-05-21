@@ -120,7 +120,7 @@ body {
 }
 .contact-list {
   display: flex;
-  margin-left: 331px;
+  margin-left: 305px;
 }
 .contact-list .link {
   display: block;
@@ -129,10 +129,12 @@ body {
 }
 
 .contact-list .contact-item:not(:last-child) {
-  margin-right: 50px;
+  margin-right: 30px;
 }
 .contact-item .link,
 .contact-item .link {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -144,6 +146,18 @@ body {
 .link:hover,
 .link:focus {
   color: var(--accent-color);
+}
+.content-link-icon-m {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+.content-link-icon-t {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 /*========== End Header ========== */

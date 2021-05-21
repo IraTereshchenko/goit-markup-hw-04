@@ -257,6 +257,21 @@ body {
   font-size: 14px;
   color: var(--secondary-text-color);
 }
+.about-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  background-color: var(--background-color);
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.about-link-icon {
+  width: 70px;
+  height: 70px;
+}
+
 /*========== End about ========== */
 
 /*========== Work ========== */
@@ -399,13 +414,18 @@ body {
 /*========== End clients========== */
 /*========== Footer========== */
 .footer {
+  display: flex;
   background-color: var(--background-footer-hero);
-}
-.footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+.footer-container-adress {
+  align-items: center;
+}
 .logo-secondary-link {
   color: var(--primary-white);
 }
@@ -419,14 +439,12 @@ body {
 .address-item:not(:last-child) {
   margin-bottom: 9px;
 }
-
 .map-link {
   font-style: normal;
   font-size: 14px;
   text-decoration: none;
   color: var(--primary-white);
 }
-
 .mail-link,
 .tel-link {
   font-style: normal;
@@ -445,6 +463,48 @@ body {
 .tel-link:hover,
 .tel-link:focus {
   color: var(--accent-color);
+}
+.join-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.join-item:not(:last-child) {
+  margin-right: 10px;
+}
+.join {
+  margin-left: 70px;
+}
+.join-text {
+  margin-bottom: 20px;
+  font-style: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--primary-white);
+}
+.join-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--main-logo-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.join-link-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+.join-link:hover,
+.join-link:focus {
+  background-color: var(--accent-color);
+}
+.join-link:hover .join-link-icon,
+.join-link:focus .join-link-icon {
+  fill: var(--primary-white);
 }
 
 /*========== End footer========== */
@@ -480,6 +540,7 @@ body {
 .filter-btn:focus {
   color: var(--primary-white);
   background-color: var(--accent-color);
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06);
 }
 .filter-item:not(:last-child) {
   margin-right: 8px;
@@ -497,6 +558,14 @@ body {
   margin-top: 30px;
   background-color: var(--background-project-color);
 }
+.project-card-link {
+  display: block;
+  padding-top: 0;
+}
+.project-card-link:hover .project-card-link:focus {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.16),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
+}
 
 .project-card {
   padding: 20px 24px;
@@ -510,6 +579,7 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  color: var(--main-color);
 }
 .project-text {
   font-weight: 400;

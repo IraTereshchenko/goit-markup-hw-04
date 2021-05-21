@@ -11,6 +11,7 @@
   --background-footer-hero: #2f303a;
   --logo-secondary-color: ##000000;
   --background-project-color: #eeeeee;
+  --main-logo-color: #afb1b8;
 }
 h1,
 h2,
@@ -329,7 +330,7 @@ body {
 .social-link-icon {
   width: 20px;
   height: 20px;
-  fill: #afb1b8;
+  fill: var(--main-logo-color);
 }
 .social-list-link:hover,
 .social-list-link:focus {
@@ -340,6 +341,48 @@ body {
   fill: var(--primary-white);
 }
 /*========== End team========== */
+/*========== Clients========== */
+.clients {
+  background-color: var(--primary-white);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+}
+.clients-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  background: transparent;
+  border: 1px solid var(--main-logo-color);
+}
+.clients-link-icon {
+  width: 106px;
+  height: 60px;
+  fill: var(--main-logo-color);
+}
+.clients-list-link:hover,
+.clients-list-link:focus {
+  background: transparent;
+  border: 1px solid var(--accent-color);
+}
+.clients-list-link:hover .clients-link-icon,
+.clients-list-link:focus .clients-link-icon {
+  fill: var(--accent-color);
+}
+
+/*========== End clients========== */
 /*========== Footer========== */
 .footer {
   background-color: var(--background-footer-hero);

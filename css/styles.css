@@ -146,6 +146,7 @@ body {
 .link:hover,
 .link:focus {
   color: var(--accent-color);
+  outline: none;
 }
 .content-link-icon-m {
   width: 16px;
@@ -210,6 +211,7 @@ body {
 .modal-btn:focus {
   color: var(--primary-white);
   background-color: var(--btn-main-color);
+  outline: none;
 }
 
 /*========== End Hero ========== */
@@ -257,7 +259,7 @@ body {
   font-size: 14px;
   color: var(--secondary-text-color);
 }
-.about-link {
+.about-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -364,6 +366,7 @@ body {
 .social-list-link:hover,
 .social-list-link:focus {
   background-color: var(--accent-color);
+  outline: none;
 }
 .social-list-link:hover .social-link-icon,
 .social-list-link:focus .social-link-icon {
@@ -405,6 +408,7 @@ body {
 .clients-list-link:focus {
   background: transparent;
   border: 1px solid var(--accent-color);
+  outline: none;
 }
 .clients-list-link:hover .clients-link-icon,
 .clients-list-link:focus .clients-link-icon {
@@ -454,15 +458,18 @@ body {
 }
 .map-link:hover,
 .map-link:focus {
+  outline: none;
   color: var(--accent-color);
 }
 .mail-link:hover,
 .mail-link:focus {
   color: var(--accent-color);
+  outline: none;
 }
 .tel-link:hover,
 .tel-link:focus {
   color: var(--accent-color);
+  outline: none;
 }
 .join-list {
   display: flex;
@@ -477,7 +484,7 @@ body {
 }
 .join-text {
   margin-bottom: 20px;
-  font-style: 700;
+  font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--primary-white);
@@ -501,6 +508,7 @@ body {
 .join-link:hover,
 .join-link:focus {
   background-color: var(--accent-color);
+  outline: none;
 }
 .join-link:hover .join-link-icon,
 .join-link:focus .join-link-icon {
@@ -538,6 +546,7 @@ body {
 }
 .filter-btn:hover,
 .filter-btn:focus {
+  outline: none;
   color: var(--primary-white);
   background-color: var(--accent-color);
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06);
@@ -564,6 +573,7 @@ body {
 }
 .project-card-link:hover,
 .project-card-link:focus {
+  outline: none;
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.16),
     0px 1px 1px rgba(0, 0, 0, 0.12);
 }
